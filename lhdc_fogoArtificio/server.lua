@@ -8,7 +8,7 @@ Citizen.CreateThread(function()
                 TriggerClientEvent("lhdc_fogoArtificio:start", playerId)
             end
         end
-        if((month == '01') and (day == '01') and (hours == '00') and (minutes == '15') and (seconds == '00'))then
+        if((month == '01') and (day == '01') and (hours == '00') and (minutes == Config.FireworksTime) and (seconds == '00'))then
             print('Stoped Fireworks')
             for _, playerId in ipairs(GetPlayers()) do
                 TriggerClientEvent("lhdc_fogoArtificio:stop", playerId)
